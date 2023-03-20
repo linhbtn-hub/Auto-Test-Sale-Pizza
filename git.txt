@@ -1,0 +1,5 @@
+git commit -m "Demo github"
+commit: Cam kết
+m: Viết tắt của từ message (message: Tin nhắn)
+origin: Nguồn gốc
+push: Đẩy

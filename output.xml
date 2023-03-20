@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221226 04:07:54.128" rpa="false" schemaversion="3">
+<suite id="s1" name="Shopping Cart" source="c:\Users\ADMIN\Desktop\Automation-Test-DATN\SalesPizza\TestCases\shopping_cart.robot">
+<test id="s1-t1" name="TC_47" line="724">
+<kw name="Mo_Trang_Web" library="common_LLK">
+<arg>http://localhost:81/Shale-PIZZAzzz-master/public/pizza</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221226 04:07:55.036" level="INFO">Opening browser 'chrome' to base url 'http://localhost:81/Shale-PIZZAzzz-master/public/pizza'.</msg>
+<status status="PASS" starttime="20221226 04:07:55.035" endtime="20221226 04:07:59.435"/>
+</kw>
+<kw name="Max_Size_Browser" library="common_LLK">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221226 04:07:59.439" endtime="20221226 04:07:59.624"/>
+</kw>
+<status status="PASS" starttime="20221226 04:07:59.437" endtime="20221226 04:07:59.626"/>
+</kw>
+<status status="PASS" starttime="20221226 04:07:55.032" endtime="20221226 04:07:59.627"/>
+</kw>
+<kw name="Dang_Nhap" library="dang_nhap_HLK">
+<arg>buithingoclinh</arg>
+<arg>66668888</arg>
+<kw name="Click_Sign_In" library="dang_nhap_LLK">
+<doc>Click vào sign input</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[text()='SIGN IN /']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221226 04:07:59.639" endtime="20221226 04:07:59.771"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[text()='SIGN IN /']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:07:59.774" level="INFO">Clicking element '//a[text()='SIGN IN /']'.</msg>
+<status status="PASS" starttime="20221226 04:07:59.772" endtime="20221226 04:08:00.067"/>
+</kw>
+<status status="PASS" starttime="20221226 04:07:59.637" endtime="20221226 04:08:00.069"/>
+</kw>
+<kw name="Input_Tai_Khoan" library="dang_nhap_LLK">
+<arg>${userName}</arg>
+<doc>Nhập tài khoản</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@name='txtUser']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221226 04:08:00.072" endtime="20221226 04:08:00.178"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='txtUser']</arg>
+<arg>${tai_khoan}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:00.183" level="INFO">Typing text 'buithingoclinh' into text field '//input[@name='txtUser']'.</msg>
+<status status="PASS" starttime="20221226 04:08:00.179" endtime="20221226 04:08:00.454"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:00.070" endtime="20221226 04:08:00.455"/>
+</kw>
+<kw name="Input_Mat_Khau" library="dang_nhap_LLK">
+<arg>${password}</arg>
+<doc>Nhập mật khẩu</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@name='txtPass']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221226 04:08:00.459" endtime="20221226 04:08:00.525"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//input[@name='txtPass']</arg>
+<arg>${mat_khau}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:00.527" level="INFO">Typing password into text field '//input[@name='txtPass']'.</msg>
+<msg timestamp="20221226 04:08:00.619" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221226 04:08:00.754" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221226 04:08:00.526" endtime="20221226 04:08:00.755"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:00.457" endtime="20221226 04:08:00.756"/>
+</kw>
+<kw name="Click_Dang_Nhap" library="dang_nhap_LLK">
+<doc>Click vào nút đăng nhập</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//button[@id='btnLogin']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221226 04:08:00.759" endtime="20221226 04:08:00.816"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='btnLogin']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:00.820" level="INFO">Clicking element '//button[@id='btnLogin']'.</msg>
+<status status="PASS" starttime="20221226 04:08:00.817" endtime="20221226 04:08:02.119"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:00.757" endtime="20221226 04:08:02.121"/>
+</kw>
+<status status="PASS" starttime="20221226 04:07:59.634" endtime="20221226 04:08:02.122"/>
+</kw>
+<kw name="Check_Dang_Nhap" library="dang_nhap_verify">
+<arg>buithingoclinh</arg>
+<doc>Kiểm tra xem tài khoản đăng nhập đã được chưa và có đúng hay không</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${actual}</var>
+<arg>//div[@id='signin-signup']//a[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:02.230" level="INFO">${actual} = Hello buithingoclinh /</msg>
+<status status="PASS" starttime="20221226 04:08:02.137" endtime="20221226 04:08:02.233"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${actual}</arg>
+<arg>${expected}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20221226 04:08:02.234" endtime="20221226 04:08:02.235"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:02.135" endtime="20221226 04:08:02.236"/>
+</kw>
+<kw name="Click_Btn_Add_To_Cart" library="cart_LLK">
+<arg>//a[contains(@href, '/addCart/20')]</arg>
+<doc>Click vào button Add to cart - Thêm vào giỏ hàng</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221226 04:08:02.241" endtime="20221226 04:08:02.581"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221226 04:08:03.084" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20221226 04:08:02.582" endtime="20221226 04:08:03.086"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:03.089" level="INFO">Clicking element '//a[contains(@href, '/addCart/20')]'.</msg>
+<status status="PASS" starttime="20221226 04:08:03.087" endtime="20221226 04:08:04.084"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:02.239" endtime="20221226 04:08:04.085"/>
+</kw>
+<kw name="Hien_Thi_Thong_Tin_Gio_Hang" library="menu_LLK">
+<doc>Hiển thị thông tin giỏ hàng</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//i[contains(@class, 'fa-shopping-cart')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:04.094" level="INFO">Clicking element '//i[contains(@class, 'fa-shopping-cart')]'.</msg>
+<status status="PASS" starttime="20221226 04:08:04.088" endtime="20221226 04:08:04.767"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//a[text()='Continue Shopping']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221226 04:08:04.768" endtime="20221226 04:08:05.073"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:04.086" endtime="20221226 04:08:05.074"/>
+</kw>
+<kw name="Check_San_Pham_Trong_Gio_Hang_HLK" library="shopping_cart_verify">
+<arg>1</arg>
+<arg>SUPER SUPREME</arg>
+<arg>1</arg>
+<arg>10</arg>
+<doc>Kiểm tra thông tin sản phẩm (tên, số lượng, giá) vừa được thêm vào trong giỏ hàng (High level key word)</doc>
+<kw name="Check_Ten_San_Pham_Trong_Gio_Hang" library="shopping_cart_verify">
+<arg>${row}</arg>
+<arg>${ten_san_pham}</arg>
+<doc>Kiểm tra tên sản phẩm trong giỏ hàng vừa được thêm</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${actual}</var>
+<arg>//table[contains(@class, 'table-striped')]//tbody//tr[${row}]//td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:05.152" level="INFO">${actual} = SUPER SUPREME</msg>
+<status status="PASS" starttime="20221226 04:08:05.080" endtime="20221226 04:08:05.154"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${actual}</arg>
+<arg>${expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221226 04:08:05.155" endtime="20221226 04:08:05.157"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:05.078" endtime="20221226 04:08:05.158"/>
+</kw>
+<kw name="Check_So_Luong_San_Pham_Trong_Gio_Hang" library="shopping_cart_verify">
+<arg>${row}</arg>
+<arg>${so_luong_san_pham}</arg>
+<doc>Kiểm tra số lượng sản phẩm trong giỏ hàng vừa được thêm</doc>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${actual}</var>
+<arg>//table[contains(@class, 'table-striped')]//tbody//tr[${row}]//td[3]//input</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20221226 04:08:05.160" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
+<msg timestamp="20221226 04:08:05.239" level="INFO">${actual} = 1</msg>
+<status status="PASS" starttime="20221226 04:08:05.160" endtime="20221226 04:08:05.239"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${actual}</arg>
+<arg>${expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221226 04:08:05.240" endtime="20221226 04:08:05.242"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:05.159" endtime="20221226 04:08:05.243"/>
+</kw>
+<kw name="Check_Gia_San_Pham_Trong_Gio_Hang" library="shopping_cart_verify">
+<arg>${row}</arg>
+<arg>${gia_san_pham}</arg>
+<doc>Kiểm tra giá sản phẩm trong giỏ hàng vừa được thêm</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${actual}</var>
+<arg>//table[contains(@class, 'table-striped')]//tbody//tr[${row}]//td[4]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:05.382" level="INFO">${actual} = 10 $</msg>
+<status status="PASS" starttime="20221226 04:08:05.245" endtime="20221226 04:08:05.383"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${actual}</arg>
+<arg>${expected}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20221226 04:08:05.384" endtime="20221226 04:08:05.385"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:05.244" endtime="20221226 04:08:05.386"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:05.076" endtime="20221226 04:08:05.387"/>
+</kw>
+<kw name="CLick_Btn_Breads_V2" library="menu_LLK">
+<arg>galicbreads</arg>
+<doc>CLick button GARLIC BREADS trong trang Menu version 2</doc>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://localhost:81/Shale-PIZZAzzz-master/public/${suffix}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221226 04:08:05.392" level="INFO">Opening url 'http://localhost:81/Shale-PIZZAzzz-master/public/galicbreads'</msg>
+<status status="PASS" starttime="20221226 04:08:05.390" endtime="20221226 04:08:06.178"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//p[text()='Good for health']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221226 04:08:06.179" endtime="20221226 04:08:06.506"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:05.388" endtime="20221226 04:08:06.508"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221226 04:08:08.518" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221226 04:08:06.516" endtime="20221226 04:08:08.520"/>
+</kw>
+<kw name="Click_Btn_Add_To_Cart" library="cart_LLK">
+<arg>//a[contains(@href, '/addCart/29')]</arg>
+<doc>Click vào button Add to cart - Thêm vào giỏ hàng</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221226 04:08:08.527" endtime="20221226 04:08:08.875"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221226 04:08:09.377" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20221226 04:08:08.876" endtime="20221226 04:08:09.377"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:09.381" level="INFO">Clicking element '//a[contains(@href, '/addCart/29')]'.</msg>
+<status status="PASS" starttime="20221226 04:08:09.378" endtime="20221226 04:08:10.561"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:08.525" endtime="20221226 04:08:10.562"/>
+</kw>
+<kw name="Hien_Thi_Thong_Tin_Gio_Hang" library="menu_LLK">
+<doc>Hiển thị thông tin giỏ hàng</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//i[contains(@class, 'fa-shopping-cart')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:10.586" level="INFO">Clicking element '//i[contains(@class, 'fa-shopping-cart')]'.</msg>
+<status status="PASS" starttime="20221226 04:08:10.583" endtime="20221226 04:08:11.698"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//a[text()='Continue Shopping']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221226 04:08:11.699" endtime="20221226 04:08:12.023"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:10.581" endtime="20221226 04:08:12.024"/>
+</kw>
+<kw name="Check_San_Pham_Trong_Gio_Hang_HLK" library="shopping_cart_verify">
+<arg>2</arg>
+<arg>Double-Garlic &amp; Herb Bread</arg>
+<arg>1</arg>
+<arg>7</arg>
+<doc>Kiểm tra thông tin sản phẩm (tên, số lượng, giá) vừa được thêm vào trong giỏ hàng (High level key word)</doc>
+<kw name="Check_Ten_San_Pham_Trong_Gio_Hang" library="shopping_cart_verify">
+<arg>${row}</arg>
+<arg>${ten_san_pham}</arg>
+<doc>Kiểm tra tên sản phẩm trong giỏ hàng vừa được thêm</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${actual}</var>
+<arg>//table[contains(@class, 'table-striped')]//tbody//tr[${row}]//td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:12.110" level="INFO">${actual} = Double-Garlic &amp; Herb Bread</msg>
+<status status="PASS" starttime="20221226 04:08:12.030" endtime="20221226 04:08:12.111"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${actual}</arg>
+<arg>${expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221226 04:08:12.112" endtime="20221226 04:08:12.113"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:12.028" endtime="20221226 04:08:12.114"/>
+</kw>
+<kw name="Check_So_Luong_San_Pham_Trong_Gio_Hang" library="shopping_cart_verify">
+<arg>${row}</arg>
+<arg>${so_luong_san_pham}</arg>
+<doc>Kiểm tra số lượng sản phẩm trong giỏ hàng vừa được thêm</doc>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${actual}</var>
+<arg>//table[contains(@class, 'table-striped')]//tbody//tr[${row}]//td[3]//input</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20221226 04:08:12.118" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
+<msg timestamp="20221226 04:08:12.205" level="INFO">${actual} = 1</msg>
+<status status="PASS" starttime="20221226 04:08:12.118" endtime="20221226 04:08:12.206"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${actual}</arg>
+<arg>${expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221226 04:08:12.207" endtime="20221226 04:08:12.209"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:12.115" endtime="20221226 04:08:12.210"/>
+</kw>
+<kw name="Check_Gia_San_Pham_Trong_Gio_Hang" library="shopping_cart_verify">
+<arg>${row}</arg>
+<arg>${gia_san_pham}</arg>
+<doc>Kiểm tra giá sản phẩm trong giỏ hàng vừa được thêm</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${actual}</var>
+<arg>//table[contains(@class, 'table-striped')]//tbody//tr[${row}]//td[4]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:12.290" level="INFO">${actual} = 7 $</msg>
+<status status="PASS" starttime="20221226 04:08:12.215" endtime="20221226 04:08:12.290"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${actual}</arg>
+<arg>${expected}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20221226 04:08:12.291" endtime="20221226 04:08:12.292"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:12.211" endtime="20221226 04:08:12.292"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:12.025" endtime="20221226 04:08:12.293"/>
+</kw>
+<kw name="CLick_Btn_Desserts_V2" library="menu_LLK">
+<arg>dessert</arg>
+<doc>CLick button DESSERTS trong trang Menu version 2</doc>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://localhost:81/Shale-PIZZAzzz-master/public/${suffix}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221226 04:08:12.297" level="INFO">Opening url 'http://localhost:81/Shale-PIZZAzzz-master/public/dessert'</msg>
+<status status="PASS" starttime="20221226 04:08:12.296" endtime="20221226 04:08:13.063"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//p[text()='ese cheesecake bars are an excellent sweet on a low-carb or keto lifestyle.']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221226 04:08:13.065" endtime="20221226 04:08:13.410"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:12.294" endtime="20221226 04:08:13.411"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221226 04:08:15.415" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221226 04:08:13.412" endtime="20221226 04:08:15.415"/>
+</kw>
+<kw name="Click_Btn_Add_To_Cart" library="cart_LLK">
+<arg>//a[contains(@href, '/addCart/45')]</arg>
+<doc>Click vào button Add to cart - Thêm vào giỏ hàng</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221226 04:08:15.422" endtime="20221226 04:08:15.760"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221226 04:08:16.263" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20221226 04:08:15.761" endtime="20221226 04:08:16.263"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:16.265" level="INFO">Clicking element '//a[contains(@href, '/addCart/45')]'.</msg>
+<status status="PASS" starttime="20221226 04:08:16.264" endtime="20221226 04:08:17.443"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:15.420" endtime="20221226 04:08:17.445"/>
+</kw>
+<kw name="Hien_Thi_Thong_Tin_Gio_Hang" library="menu_LLK">
+<doc>Hiển thị thông tin giỏ hàng</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//i[contains(@class, 'fa-shopping-cart')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:17.459" level="INFO">Clicking element '//i[contains(@class, 'fa-shopping-cart')]'.</msg>
+<status status="PASS" starttime="20221226 04:08:17.458" endtime="20221226 04:08:18.544"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//a[text()='Continue Shopping']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221226 04:08:18.546" endtime="20221226 04:08:18.894"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:17.456" endtime="20221226 04:08:18.895"/>
+</kw>
+<kw name="Check_San_Pham_Trong_Gio_Hang_HLK" library="shopping_cart_verify">
+<arg>3</arg>
+<arg>Keto Berry-Pecan Cheesecake Bars</arg>
+<arg>1</arg>
+<arg>5</arg>
+<doc>Kiểm tra thông tin sản phẩm (tên, số lượng, giá) vừa được thêm vào trong giỏ hàng (High level key word)</doc>
+<kw name="Check_Ten_San_Pham_Trong_Gio_Hang" library="shopping_cart_verify">
+<arg>${row}</arg>
+<arg>${ten_san_pham}</arg>
+<doc>Kiểm tra tên sản phẩm trong giỏ hàng vừa được thêm</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${actual}</var>
+<arg>//table[contains(@class, 'table-striped')]//tbody//tr[${row}]//td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:19.019" level="INFO">${actual} = Keto Berry-Pecan Cheesecake Bars</msg>
+<status status="PASS" starttime="20221226 04:08:18.900" endtime="20221226 04:08:19.020"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${actual}</arg>
+<arg>${expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221226 04:08:19.021" endtime="20221226 04:08:19.022"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:18.899" endtime="20221226 04:08:19.023"/>
+</kw>
+<kw name="Check_So_Luong_San_Pham_Trong_Gio_Hang" library="shopping_cart_verify">
+<arg>${row}</arg>
+<arg>${so_luong_san_pham}</arg>
+<doc>Kiểm tra số lượng sản phẩm trong giỏ hàng vừa được thêm</doc>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${actual}</var>
+<arg>//table[contains(@class, 'table-striped')]//tbody//tr[${row}]//td[3]//input</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20221226 04:08:19.026" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
+<msg timestamp="20221226 04:08:19.169" level="INFO">${actual} = 1</msg>
+<status status="PASS" starttime="20221226 04:08:19.026" endtime="20221226 04:08:19.169"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${actual}</arg>
+<arg>${expected}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221226 04:08:19.170" endtime="20221226 04:08:19.171"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:19.024" endtime="20221226 04:08:19.172"/>
+</kw>
+<kw name="Check_Gia_San_Pham_Trong_Gio_Hang" library="shopping_cart_verify">
+<arg>${row}</arg>
+<arg>${gia_san_pham}</arg>
+<doc>Kiểm tra giá sản phẩm trong giỏ hàng vừa được thêm</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${actual}</var>
+<arg>//table[contains(@class, 'table-striped')]//tbody//tr[${row}]//td[4]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:19.277" level="INFO">${actual} = 5 $</msg>
+<status status="PASS" starttime="20221226 04:08:19.175" endtime="20221226 04:08:19.278"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${actual}</arg>
+<arg>${expected}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20221226 04:08:19.279" endtime="20221226 04:08:19.280"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:19.173" endtime="20221226 04:08:19.281"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:18.897" endtime="20221226 04:08:19.281"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221226 04:08:21.286" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221226 04:08:19.285" endtime="20221226 04:08:21.286"/>
+</kw>
+<kw name="CLick_Btn_Checkout" library="cart_LLK">
+<doc>Click button checkout (Thanh toán)</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[text()='Checkout']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221226 04:08:21.290" endtime="20221226 04:08:21.351"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//a[text()='Checkout']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221226 04:08:21.351" endtime="20221226 04:08:21.663"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[text()='Checkout']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:21.666" level="INFO">Clicking element '//a[text()='Checkout']'.</msg>
+<status status="PASS" starttime="20221226 04:08:21.664" endtime="20221226 04:08:23.144"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:21.288" endtime="20221226 04:08:23.145"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221226 04:08:25.147" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221226 04:08:23.146" endtime="20221226 04:08:25.147"/>
+</kw>
+<kw name="Thanh_Toan_Option_2_HLK" library="cart_HLK">
+<arg>//option[@value='Pizza Express Hoang Mai 52 Kim Đong, Hoang Mai']</arg>
+<arg>Linh</arg>
+<arg>Bui</arg>
+<arg>hello@gmail.com</arg>
+<arg>1234567890</arg>
+<arg>Tôi sẽ đến lấy đồ lúc 12h trưa nay</arg>
+<doc>Thanh toán High level key word</doc>
+<kw name="Chon_Cach_Nhan_Hang" library="cart_LLK">
+<arg>//input[@value='option2']</arg>
+<doc>Chọn cách nhận hàng</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${options}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221226 04:08:25.154" endtime="20221226 04:08:25.231"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${options}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:25.233" level="INFO">Clicking element '//input[@value='option2']'.</msg>
+<status status="PASS" starttime="20221226 04:08:25.231" endtime="20221226 04:08:25.376"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:25.151" endtime="20221226 04:08:25.377"/>
+</kw>
+<kw name="Chon_Dia_Chi_Cua_Hang" library="cart_LLK">
+<arg>${location}</arg>
+<doc>Chọn địa chỉ cửa hàng nhâ đồ</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//select[@name='CarryOrder']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:25.383" level="INFO">Clicking element '//select[@name='CarryOrder']'.</msg>
+<status status="PASS" starttime="20221226 04:08:25.381" endtime="20221226 04:08:25.593"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221226 04:08:26.595" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221226 04:08:25.594" endtime="20221226 04:08:26.596"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:26.598" level="INFO">Clicking element '//option[@value='Pizza Express Hoang Mai 52 Kim Đong, Hoang Mai']'.</msg>
+<status status="PASS" starttime="20221226 04:08:26.596" endtime="20221226 04:08:26.703"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:25.379" endtime="20221226 04:08:26.704"/>
+</kw>
+<kw name="Input_First_Name" library="cart_LLK">
+<arg>${firstName}</arg>
+<doc>Nhập thông tin họ tên khi thanh toán</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='FirstName']</arg>
+<arg>${firstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:26.709" level="INFO">Typing text 'Linh' into text field '//input[@name='FirstName']'.</msg>
+<status status="PASS" starttime="20221226 04:08:26.707" endtime="20221226 04:08:26.993"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:26.705" endtime="20221226 04:08:26.993"/>
+</kw>
+<kw name="Input_Last_Name" library="cart_LLK">
+<arg>${lastName}</arg>
+<doc>Nhập thông tin tên khi thanh toán</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='LastName']</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:26.997" level="INFO">Typing text 'Bui' into text field '//input[@name='LastName']'.</msg>
+<status status="PASS" starttime="20221226 04:08:26.995" endtime="20221226 04:08:27.264"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:26.994" endtime="20221226 04:08:27.266"/>
+</kw>
+<kw name="Input_Email_Khi_Thanh_Toan" library="cart_LLK">
+<arg>${email}</arg>
+<doc>Nhập thông tin Email khi thanh toán</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='Email']</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:27.273" level="INFO">Typing text 'hello@gmail.com' into text field '//input[@name='Email']'.</msg>
+<status status="PASS" starttime="20221226 04:08:27.270" endtime="20221226 04:08:27.744"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:27.267" endtime="20221226 04:08:27.745"/>
+</kw>
+<kw name="Input_Phone" library="cart_LLK">
+<arg>${phone}</arg>
+<doc>Nhập thông tin Phone khi thanh toán</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='Phone']</arg>
+<arg>${Phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:27.750" level="INFO">Typing text '1234567890' into text field '//input[@name='Phone']'.</msg>
+<status status="PASS" starttime="20221226 04:08:27.748" endtime="20221226 04:08:28.192"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:27.746" endtime="20221226 04:08:28.192"/>
+</kw>
+<kw name="Input_Note" library="cart_LLK">
+<arg>${note}</arg>
+<doc>Nhập thông tin ghi chú</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//textarea[@name='Cmt']</arg>
+<arg>${note}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:28.197" level="INFO">Typing text 'Tôi sẽ đến lấy đồ lúc 12h trưa nay' into text field '//textarea[@name='Cmt']'.</msg>
+<status status="PASS" starttime="20221226 04:08:28.195" endtime="20221226 04:08:28.795"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:28.193" endtime="20221226 04:08:28.797"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221226 04:08:30.799" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221226 04:08:28.798" endtime="20221226 04:08:30.801"/>
+</kw>
+<kw name="Click_Btn_Xac_Nhan_Thanh_Toan" library="cart_LLK">
+<doc>CLick button xác nhận thanh toán</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@id='collapseTwo']//button[text()='THANH TOÁN']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:30.806" level="INFO">Clicking element '//div[@id='collapseTwo']//button[text()='THANH TOÁN']'.</msg>
+<status status="PASS" starttime="20221226 04:08:30.803" endtime="20221226 04:08:32.456"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:30.802" endtime="20221226 04:08:32.457"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:25.149" endtime="20221226 04:08:32.458"/>
+</kw>
+<kw name="Thanh_Toan_Tien_Vi_VtcPay_HLK" library="cart_HLK">
+<arg>22</arg>
+<doc>Thanh toán tiền qua ví điện tử VtcPay</doc>
+<kw name="Thanh_Toan_VtcPay" library="cart_LLK">
+<doc>Chọn phương thức thanh toán qua ví điện tử VtcPay</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class='card']//div[@class='card-body']//input[@value='option2']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:32.472" level="INFO">Clicking element '//div[@class='card']//div[@class='card-body']//input[@value='option2']'.</msg>
+<status status="PASS" starttime="20221226 04:08:32.468" endtime="20221226 04:08:32.713"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:32.465" endtime="20221226 04:08:32.714"/>
+</kw>
+<kw name="Input_Tien_VtcPay" library="cart_LLK">
+<arg>${number}</arg>
+<doc>Nhập số tiền sẽ thanh toán qua ví VtcPay</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='txtCheck2']</arg>
+<arg>${number}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:32.722" level="INFO">Typing text '22' into text field '//input[@name='txtCheck2']'.</msg>
+<status status="PASS" starttime="20221226 04:08:32.718" endtime="20221226 04:08:33.110"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:32.715" endtime="20221226 04:08:33.111"/>
+</kw>
+<kw name="Click_Btn_Xac_Nhan_Chuyen_Tien_VtcPay" library="cart_LLK">
+<doc>Click button xác nhận thanh toán chuyển tiền sau khi đã chọn phương thức thanh toán và nhập số tiền</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class='card']//div[@id='collapseTwo']//button[text()='CHECK OUT']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:33.116" level="INFO">Clicking element '//div[@class='card']//div[@id='collapseTwo']//button[text()='CHECK OUT']'.</msg>
+<status status="PASS" starttime="20221226 04:08:33.114" endtime="20221226 04:08:34.405"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:33.112" endtime="20221226 04:08:34.406"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:32.463" endtime="20221226 04:08:34.406"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221226 04:08:35.411" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221226 04:08:34.409" endtime="20221226 04:08:35.411"/>
+</kw>
+<kw name="Check_Thanh_Toan_Thanh_Cong" library="shopping_cart_verify">
+<doc>Kiểm tra thanh toán thành công</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${actual}</var>
+<arg>//h3[text()='Thanh toán thành công ']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221226 04:08:35.488" level="INFO">${actual} = Thanh toán thành công</msg>
+<status status="PASS" starttime="20221226 04:08:35.415" endtime="20221226 04:08:35.489"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${actual}</arg>
+<arg>Thanh toán thành công</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20221226 04:08:35.490" endtime="20221226 04:08:35.491"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:35.414" endtime="20221226 04:08:35.492"/>
+</kw>
+<kw name="Di_Chuyen_Toi_Man_Hinh_Quan_Ly_Don_Hang" library="order_table">
+<doc>Di chuyển tới màn hình quản lý đơn hàng của admin</doc>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://localhost:81/Shale-PIZZAzzz-master/public/backend/order-table</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221226 04:08:35.496" level="INFO">Opening url 'http://localhost:81/Shale-PIZZAzzz-master/public/backend/order-table'</msg>
+<status status="PASS" starttime="20221226 04:08:35.495" endtime="20221226 04:08:39.552"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:35.493" endtime="20221226 04:08:39.553"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221226 04:08:40.558" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221226 04:08:39.556" endtime="20221226 04:08:40.558"/>
+</kw>
+<kw name="Scroll_Toi_Btn_Add_New_Order" library="order_table">
+<doc>Scroll tới nút thêm mới đơn hàng</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//a[text()='+ Add new Order']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221226 04:08:40.562" endtime="20221226 04:08:40.950"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:40.561" endtime="20221226 04:08:40.950"/>
+</kw>
+<kw name="Check_Thong_Tin_Don_Hang_HLK" library="order_table_verify">
+<arg>489</arg>
+<arg>complete</arg>
+<doc>Kiểm tra thông tin (trạng thái và userId) đơn hàng khi thanh toán thành công</doc>
+<kw name="Check_Trang_Thai_Don_Hang_Khi_Thanh_Toan_Thanh_Cong" library="order_table_verify">
+<arg>${trang_thai}</arg>
+<doc>Kiểm tra trạng thái đơn hàng khi thanh toán thành công trong giao diện quản trị</doc>
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<var>${value}</var>
+<arg>//div[@id='content']//div[@class='container-fluid'][2]/div/div[1]//table</arg>
+<arg>-2</arg>
+<arg>4</arg>
+<doc>Returns contents of a table cell.</doc>
+<msg timestamp="20221226 04:08:41.172" level="INFO">${value} = complete</msg>
+<status status="PASS" starttime="20221226 04:08:40.955" endtime="20221226 04:08:41.173"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221226 04:08:41.174" endtime="20221226 04:08:41.182"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${value}</arg>
+<arg>${expect}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221226 04:08:41.183" endtime="20221226 04:08:41.185"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:40.954" endtime="20221226 04:08:41.186"/>
+</kw>
+<kw name="Check_User_ID_Don_Hang_Khi_Thanh_Toan_Thanh_Cong" library="order_table_verify">
+<arg>${userId}</arg>
+<doc>Kiểm tra thông tin chủ sở hữu đơn hàng khi thanh toán thành công trong giao diện quản trị</doc>
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<var>${value}</var>
+<arg>//div[@id='content']//div[@class='container-fluid'][2]/div/div[1]//table</arg>
+<arg>-2</arg>
+<arg>2</arg>
+<doc>Returns contents of a table cell.</doc>
+<msg timestamp="20221226 04:08:41.336" level="INFO">${value} = 489</msg>
+<status status="PASS" starttime="20221226 04:08:41.189" endtime="20221226 04:08:41.336"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221226 04:08:41.337" endtime="20221226 04:08:41.340"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${value}</arg>
+<arg>${expect}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221226 04:08:41.341" endtime="20221226 04:08:41.343"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:41.187" endtime="20221226 04:08:41.344"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:40.952" endtime="20221226 04:08:41.345"/>
+</kw>
+<kw name="Scroll_Toi_Btn_Add_New_Delive" library="order_table">
+<doc>Scroll tới nút thêm mới giao vận</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//a[text()='+ Add new Delivery']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221226 04:08:41.348" endtime="20221226 04:08:41.843"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:41.347" endtime="20221226 04:08:41.844"/>
+</kw>
+<kw name="Check_Thong_Tin_Giao_Van_OPT_2_HLK" library="order_table_verify">
+<arg>489</arg>
+<arg>1234567890</arg>
+<arg>Pizza Express Hoang Mai 52 Kim Đong, Hoang Mai</arg>
+<doc>Kiểm tra thông tin (SĐT và userId và địa chỉ cửa hàng khách đến lấy) giao vận khi thanh toán thành công</doc>
+<kw name="Check_User_ID_Giao_Van_Khi_Thanh_Toan_Thanh_Cong" library="order_table_verify">
+<arg>${userId}</arg>
+<doc>Kiểm tra thông tin chủ sở hữu đơn hàng khi thanh toán thành công trong giao diện quản trị</doc>
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<var>${value}</var>
+<arg>//div[@id='content']//div[@class='container-fluid'][2]/div/div[2]//table</arg>
+<arg>-2</arg>
+<arg>2</arg>
+<doc>Returns contents of a table cell.</doc>
+<msg timestamp="20221226 04:08:42.048" level="INFO">${value} = 489</msg>
+<status status="PASS" starttime="20221226 04:08:41.850" endtime="20221226 04:08:42.048"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221226 04:08:42.049" endtime="20221226 04:08:42.051"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${value}</arg>
+<arg>${expect}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221226 04:08:42.052" endtime="20221226 04:08:42.053"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:41.848" endtime="20221226 04:08:42.054"/>
+</kw>
+<kw name="Check_SDT_Giao_Van_Khi_Thanh_Toan_Thanh_Cong" library="order_table_verify">
+<arg>${sdt}</arg>
+<doc>Kiểm tra số điện thoại khi thanh toán thành công trong giao diện quản trị</doc>
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<var>${value}</var>
+<arg>//div[@id='content']//div[@class='container-fluid'][2]/div/div[2]//table</arg>
+<arg>-2</arg>
+<arg>3</arg>
+<doc>Returns contents of a table cell.</doc>
+<msg timestamp="20221226 04:08:42.217" level="INFO">${value} = 1234567890</msg>
+<status status="PASS" starttime="20221226 04:08:42.056" endtime="20221226 04:08:42.217"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221226 04:08:42.218" endtime="20221226 04:08:42.219"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${value}</arg>
+<arg>${expect}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221226 04:08:42.220" endtime="20221226 04:08:42.222"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:42.054" endtime="20221226 04:08:42.223"/>
+</kw>
+<kw name="Check_Dia_Chi_Cua_Hang_Khi_Thanh_Toan_Thanh_Cong" library="order_table_verify">
+<arg>${dia_chi}</arg>
+<doc>Kiểm tra thông tin cửa hàng khách sẽ đến lấy khi thanh toán thành công trong giao diện quản trị</doc>
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<var>${value}</var>
+<arg>//div[@id='content']//div[@class='container-fluid'][2]/div/div[2]//table</arg>
+<arg>-2</arg>
+<arg>4</arg>
+<doc>Returns contents of a table cell.</doc>
+<msg timestamp="20221226 04:08:42.372" level="INFO">${value} = Pizza Express Hoang Mai 52 Kim Đong, Hoang Mai</msg>
+<status status="PASS" starttime="20221226 04:08:42.225" endtime="20221226 04:08:42.372"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221226 04:08:42.373" endtime="20221226 04:08:42.375"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${value}</arg>
+<arg>${expect}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221226 04:08:42.376" endtime="20221226 04:08:42.377"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:42.224" endtime="20221226 04:08:42.378"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:41.845" endtime="20221226 04:08:42.379"/>
+</kw>
+<kw name="Scroll_Toi_Btn_Add_New_Order_Detail" library="order_table">
+<doc>Scroll tới nút thêm mới chi tiết đơn hàng</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//a[text()='+ Add new Order Detail']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221226 04:08:42.383" endtime="20221226 04:08:42.733"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:42.381" endtime="20221226 04:08:42.734"/>
+</kw>
+<kw name="Check_San_Pham_Trong_Chi_Tiet_Don_Hang_Khi_Thanh_Toan_Thanh_Cong_HLK" library="order_table_verify">
+<arg>SUPER SUPREME</arg>
+<arg>3</arg>
+<arg>22</arg>
+<doc>Kiểm tra thông tin (tên sản phẩm, số lượng và giá sản phẩm) chi tiết đơn hàng khi thanh toán thành công</doc>
+<kw name="Check_Ten_San_Pham_Trong_Chi_Tiet_Don_Hang_Khi_Thanh_Toan_Thanh_Cong" library="order_table_verify">
+<arg>${ten_san_pham}</arg>
+<doc>Kiểm tra tên sản phẩm trong chi tiết đơn hàng khi thanh toán thành công</doc>
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<var>${value}</var>
+<arg>//div[@id='content']//div[@class='container-fluid'][2]/div/div[3]//table</arg>
+<arg>-2</arg>
+<arg>2</arg>
+<doc>Returns contents of a table cell.</doc>
+<msg timestamp="20221226 04:08:43.029" level="INFO">${value} = SUPER SUPREME,Double-Garlic &amp; Herb Bread,Keto Berry-Pecan Cheesecake Bars</msg>
+<status status="PASS" starttime="20221226 04:08:42.741" endtime="20221226 04:08:43.030"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221226 04:08:43.030" endtime="20221226 04:08:43.034"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${value}</arg>
+<arg>${expect}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20221226 04:08:43.035" endtime="20221226 04:08:43.036"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:42.739" endtime="20221226 04:08:43.037"/>
+</kw>
+<kw name="Check_So_Luong_San_Pham_Trong_Chi_Tiet_Don_Hang_Khi_Thanh_Toan_Thanh_Cong" library="order_table_verify">
+<arg>${so_luong}</arg>
+<doc>Kiểm tra số lượng sản phẩm trong chi tiết đơn hàng khi thanh toán thành công</doc>
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<var>${value}</var>
+<arg>//div[@id='content']//div[@class='container-fluid'][2]/div/div[3]//table</arg>
+<arg>-2</arg>
+<arg>3</arg>
+<doc>Returns contents of a table cell.</doc>
+<msg timestamp="20221226 04:08:43.232" level="INFO">${value} = 3</msg>
+<status status="PASS" starttime="20221226 04:08:43.040" endtime="20221226 04:08:43.232"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221226 04:08:43.233" endtime="20221226 04:08:43.234"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${value}</arg>
+<arg>${expect}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221226 04:08:43.235" endtime="20221226 04:08:43.237"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:43.038" endtime="20221226 04:08:43.238"/>
+</kw>
+<kw name="Check_Gia_San_Pham_Trong_Chi_Tiet_Don_Hang_Khi_Thanh_Toan_Thanh_Cong" library="order_table_verify">
+<arg>${gia}</arg>
+<doc>Kiểm tra giá sản phẩm trong chi tiết đơn hàng khi thanh toán thành công</doc>
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<var>${value}</var>
+<arg>//div[@id='content']//div[@class='container-fluid'][2]/div/div[3]//table</arg>
+<arg>-2</arg>
+<arg>4</arg>
+<doc>Returns contents of a table cell.</doc>
+<msg timestamp="20221226 04:08:43.397" level="INFO">${value} = 22</msg>
+<status status="PASS" starttime="20221226 04:08:43.241" endtime="20221226 04:08:43.397"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${value}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221226 04:08:43.398" endtime="20221226 04:08:43.399"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${value}</arg>
+<arg>${expect}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221226 04:08:43.400" endtime="20221226 04:08:43.402"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:43.239" endtime="20221226 04:08:43.403"/>
+</kw>
+<status status="PASS" starttime="20221226 04:08:42.735" endtime="20221226 04:08:43.404"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221226 04:08:45.407" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221226 04:08:43.406" endtime="20221226 04:08:45.407"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221226 04:08:45.410" endtime="20221226 04:08:48.163"/>
+</kw>
+<status status="PASS" starttime="20221226 04:07:55.030" endtime="20221226 04:08:48.165"/>
+</test>
+<status status="PASS" starttime="20221226 04:07:54.141" endtime="20221226 04:08:48.170"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Shopping Cart">Shopping Cart</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221226 04:08:05.160" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
+<msg timestamp="20221226 04:08:12.118" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
+<msg timestamp="20221226 04:08:19.026" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
+</errors>
+</robot>
